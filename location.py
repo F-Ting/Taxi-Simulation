@@ -7,24 +7,25 @@ class Location:
         @type column: int
         @rtype: None
         """
-        # TODO
-        pass
+        self.row = row
+        self.column = column
 
     def __str__(self):
         """Return a string representation.
 
+        @type self: Location
         @rtype: str
         """
-        # TODO
-        pass
+        return "({}, {})".format(self.row, self.column)
 
     def __eq__(self, other):
         """Return True if self equals other, and false otherwise.
 
+        @type self: Location
+        @type other: Location | other
         @rtype: bool
         """
-        # TODO
-        pass
+        return (self.row == other.row) and (self.column == other.column)
 
 
 def manhattan_distance(origin, destination):
@@ -34,9 +35,7 @@ def manhattan_distance(origin, destination):
     @type destination: Location
     @rtype: int
     """
-    # TODO
-    pass
-
+    return (destination.row - origin.row) + (destination.column - origin.column)
 
 def deserialize_location(location_str):
     """Deserialize a location.
