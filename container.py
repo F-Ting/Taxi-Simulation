@@ -117,4 +117,4 @@ class PriorityQueue(Container):
         >>> pq._items
         ['blue', 'green', 'red', 'yellow']
         """
-        pass
+        return ""
